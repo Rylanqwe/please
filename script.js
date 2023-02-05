@@ -1,25 +1,19 @@
-const connectButton = document.getElementById("connect");
-const flipButton = document.getElementById("flip");
-const resultDiv = document.getElementById("result");
+const solanaWeb3 = require("solana-web3");
 
-connectButton.addEventListener("click", async () => {
-  try {
-    // Connect to Phantom wallet
-    const connection = await solana.connect();
-
-    // Check if connection was successful
-    if (connection) {
-      resultDiv.innerHTML = "Successfully connected to Phantom wallet";
-    } else {
-      resultDiv.innerHTML = "Failed to connect to Phantom wallet";
-    }
-  } catch (error) {
-    resultDiv.innerHTML = "An error occurred while connecting to Phantom wallet";
-    console.error(error);
-  }
+const connectButton = document.getElementById("connect-button");
+connectButton.addEventListener("click", function() {
+  solanaWeb3.connect("testnet")
+    .then(() => {
+      console.log("Connected to Phantom wallet!");
+    })
+    .catch(error => {
+      console.error("Error connecting to Phantom wallet: ", error);
+    });
 });
 
-flipButton.addEventListener("click", () => {
+const flipButton = document.getElementById("flip-button");
+const resultDiv = document.getElementById("result");
+flipButton.addEventListener("click", function() {
   const result = Math.floor(Math.random() * 2) + 1;
   resultDiv.innerHTML = result === 1 ? "Heads" : "Tails";
 });
