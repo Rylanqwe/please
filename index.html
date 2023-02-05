@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Crypto City Casino</title>
-    <script src="node_modules/@solana/web3.js/dist/solana-web3.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/solana-web3@1.0.3/dist/solana-web3.min.js"></script>
+    <script src="connect.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Crypto City Casino</h1>
-    <button id="connect">Connect</button>
-    <br><br>
-    <button id="flip">Flip</button>
-    <br><br>
-    <div id="result"></div>
+    <div id="header">Crypto City Casino</div>
+    <div id="connect-container">
+      <button id="connect-button">Connect</button>
+    </div>
+    <div id="flip-container">
+      <button id="flip-button">Flip</button>
+      <div id="result"></div>
+    </div>
   </body>
 </html>
