@@ -1,32 +1,22 @@
 body {
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  
-  .title {
-    color: gold;
-  }
-  
-  #flipBtn {
-    margin-top: 50px;
-    padding: 10px 20px;
-    background-color: gold;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-  }
-  
-  #connectBtn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: gold;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-  }
-  
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: gold;
+}
+
+button {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+}
