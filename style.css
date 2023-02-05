@@ -1,34 +1,28 @@
 body {
   background-color: black;
-}
-
-#title {
-  color: gold;
+  color: white;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-#flipBtn {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  background-color: gold;
-  border: none;
-  border-radius: 5px;
-  color: black;
-  font-size: 16px;
-  cursor: pointer;
+#header {
+  font-size: 36px;
+  padding: 20px;
 }
 
-#connectBtn {
+#connect-container {
+  padding: 20px;
+  float: right;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px 20px;
-  background-color: gold;
-  border: none;
-  border-radius: 5px;
-  color: black;
-  font-size: 16px;
-  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+
+#flip-container {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+#result {
+  padding: 20px;
+  font-size: 24px;
 }
